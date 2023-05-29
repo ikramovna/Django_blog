@@ -1,0 +1,13 @@
+register, login ✅
+reset password (in reset password page) ✅
+change password (in change password page) ✅
+confirm email ✅
+blog ✅
+pagination ✅
+override admin('jazzmin/settings.py') ✅
+email send with django-celery
+translation model(with django-parler)
+translation static(with django-rosetta)
+
+
+
