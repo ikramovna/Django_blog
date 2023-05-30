@@ -1,6 +1,6 @@
 {% extends 'apps/blog/base.html' %} {% block content %}
     {% load crispy_forms_tags %}
-
+    {% load i18n %}
     <div class="container">
         <div class="row">
             <div class="col-md-8 card mb-4  mt-3 left  top">
@@ -20,33 +20,33 @@
 
                         <p>
                     {% endwith %} {% for comment in comments %}
-                        </p>
+                    </p>
 
-                        <div class="comments" style="padding: 10px;">
-                            <p class="font-weight-bold">
-                                {{ comment.name }}
-                                <span class=" text-muted font-weight-normal">
+                    <div class="comments" style="padding: 10px;">
+                        <p class="font-weight-bold">
+                            {{ comment.name }}
+                            <span class=" text-muted font-weight-normal">
                                     {{ comment.created_on }}
                                 </span>
-                            </p>
-                            {{ comment.body | linebreaks }}
-                        </div>
+                        </p>
+                        {{ comment.body | linebreaks }}
+                    </div>
 
-                    {% endfor %}
+                {% endfor %}
                 </div>
             </div>
             <div class="col-md-8 card mb-4  mt-3 ">
                 <div class="card-body">
                     {% if new_comment %}
                         <div class="alert alert-success" role="alert">
-                            Your comment is awaiting moderation
+                            {% trans 'Your comment is awaiting moderation' %}
                         </div>
                     {% else %}
-                        <h3>Leave a comment</h3>
+                        <h3>{% trans 'Leave a comment' %}</h3>
                         <form method="post" style="margin-top: 1.3em;">
                             {{ comment_form | crispy }}
                             {% csrf_token %}
-                            <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+                            <button type="submit" class="btn btn-primary  btn-lg">{% trans 'Submit' %}</button>
                         </form>
                     {% endif %}
                 </div>

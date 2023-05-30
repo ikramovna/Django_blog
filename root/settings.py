@@ -16,12 +16,15 @@ ALLOWED_HOSTS = ['*']
 
 MY_APPS = [
     'apps.users',
-    'apps.blogs'
+    'apps.blogs',
+    'apps.crud',
 ]
 
 THIRD_PARTY_APPS = [
     'rest_framework',
     'drf_yasg',
+    'rosetta',
+    'parler',
 
 ]
 
@@ -154,3 +157,4 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
+

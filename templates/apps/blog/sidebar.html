@@ -1,15 +1,15 @@
 {% block sidebar %}
-
+{% load i18n %}
 
 
     <!-- Sidebar Widgets Column -->
     <div class="col-md-4 float-right ">
         <div class="card my-4">
-            <h5 class="card-header">About Us</h5>
+            <h5 class="card-header">{% trans 'About Us' %}</h5>
             <div class="card-body">
-                <p class="card-text"> This awesome blog is made with our Favourite full stack Framework Django,
-                    follow up the project to learn how we made it</p>
-                <a href="#" class="btn btn-danger">Know more</a>
+                <p class="card-text">{% trans ' This awesome blog is made with our Favourite full stack Framework Django,
+                    follow up the project to learn how we made it' %}</p>
+                <a href="#" class="btn btn-danger">{% trans 'Know more' %}</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head itemscope="" itemtype="http://schema.org/WebSite">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title itemprop="name">Preview Bootstrap snippets. contacts list table</title>
+    <meta name="description" itemprop="description"
+          content="Preview Bootstrap snippets. contacts list table. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="keywords"
+          content="html, css, javascript, themes, templates, code snippets, ui examples, react js, react-native, plagraounds, cards, front-end, profile, invoice, back-end, web-designers, web-developers">
+    <link itemprop="sameAs" href="https://www.facebook.com/bootdey">
+    <link itemprop="sameAs" href="https://twitter.com/bootdey">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/bootdey_favicon.ico">
+    <link rel="apple-touch-icon" sizes="135x140" href="/img/bootdey_135x140.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/bootdey_76x76.png">
+    <link rel="canonical" href="https://bootdey.com/snippets/view/contacts-list-table" itemprop="url">
+    <meta property="twitter:account_id" content="2433978487"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bootdey">
+    <meta name="twitter:creator" content="@bootdey">
+    <meta name="twitter:title" content="Preview Bootstrap  snippets. contacts list table">
+    <meta name="twitter:description"
+          content="Preview Bootstrap snippets. contacts list table. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="twitter:image" content="https://bootdey.com/files/SnippetsImages/bootstrap-snippets-1320.png">
+    <meta name="twitter:url" content="https://bootdey.com/snippets/preview/contacts-list-table">
+    <meta property="og:title" content="Preview Bootstrap  snippets. contacts list table">
+    <meta property="og:url" content="https://bootdey.com/snippets/preview/contacts-list-table">
+    <meta property="og:image" content="https://bootdey.com/files/SnippetsImages/bootstrap-snippets-1320.png">
+    <meta property="og:description"
+          content="Preview Bootstrap snippets. contacts list table. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="msvalidate.01" content="23285BE3183727A550D31CAE95A790AB"/>
+    <script src="/cache-js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="snippetContent">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+          integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
+          integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous"/>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="mb-3"><h5 class="card-title">Contact List <span
+                        class="text-muted fw-normal ms-2">(834)</span></h5></div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
+                    <div>
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a aria-current="page" href="#"
+                                                    class="router-link-active router-link-exact-active nav-link active"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" title=""
+                                                    data-bs-original-title="List" aria-label="List"> <i
+                                    class="bx bx-list-ul"></i> </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="" data-bs-original-title="Grid"
+                                                    aria-label="Grid"><i class="bx bx-grid-alt"></i></a></li>
+                        </ul>
+                    </div>
+                    <a href="{% url 'add' %}" class="btn btn-primary">Add user</a>
+                    <div class="dropdown"><a
+                            class="btn btn-link text-muted py-1 font-size-16 shadow-none dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="bx bx-dots-horizontal-rounded"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="">
+                    <div class="table-responsive">
+                        <table class="table project-list-table table-nowrap align-middle table-borderless">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="ps-4" style="width: 50px;">
+                                    <div class="form-check font-size-16"><input type="checkbox" class="form-check-input"
+                                                                                id="contacusercheck"/><label
+                                            class="form-check-label" for="contacusercheck"></label></div>
+                                </th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Position</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Projects</th>
+                                <th scope="col" style="width: 200px;">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for user in users %}
+                                <tr>
+                                    <th scope="row" class="ps-4">
+                                        <div class="form-check font-size-16"><input type="checkbox"
+                                                                                    class="form-check-input"
+                                                                                    id="contacusercheck1"/><label
+                                                class="form-check-label" for="contacusercheck1"></label></div>
+                                    </th>
+                                    <td><img src="{{ user.image.url }}" alt=""
+                                             class="avatar-sm rounded-circle me-2"/><a href="#" class="text-body">{{ user.name }}</a></td>
+                                    <td><span class="badge badge-soft-success mb-0">{{ user.position }}</span></td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__">{{ user.email }}</a>
+                                    </td>
+                                    <td>{{ user.projects }}</td>
+                                    <td>
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item"><a href="{% url 'update' user.pk %}"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top"
+                                                                            title="Edit" class="px-2 text-primary"><i
+                                                    class="bx bx-pencil font-size-18"></i></a></li>
+                                            <li class="list-inline-item"><a href="{% url 'delete' user.pk %}"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-placement="top"
+                                                                            title="Delete" class="px-2 text-danger"><i
+                                                    class="bx bx-trash-alt font-size-18"></i></a></li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if users.has_other_pages %}
+            <div class="row g-0 align-items-center pb-4">
+                <div class="col-sm-6">
+                    <div><p class="mb-sm-0">Showing 1 to 10 of 57 entries</p></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="float-sm-end">
+                        <ul class="pagination mb-sm-0">
+                            {% if users.has_previous %}
+                                <li class="page-item">
+                                    <a href="?page={{ users.previous_page_number }}" class="page-link">&laquo;</a>
+                                </li>
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <a href="#" class="page-link"> <i class="mdi mdi-chevron-left"></i> </a>
+                                </li>
+                            {% endif %}
+                            {% for i in users.paginator.page_range %}
+                                {% if users.number == i %}
+                                    <li class="page-item active"><a href="{{ i }}" class="page-link">{{ i }}</a></li>
+                                {% else %}
+                                    <li class="page-item"><a href="?page={{ i }}" class="page-link">{{ i }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                            {% if users.has_next %}
+                                <li class="page-item">
+                                    <a href="?page={{ users.next_page_number }}" class="page-link">&raquo;</a></li>
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a></li>
+                            {% endif %}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <style type="text/css">/*<![CDATA[*/
+    body {
+        margin-top: 20px;
+        background-color: #eee;
+    }
+
+    .project-list-table {
+        border-collapse: separate;
+        border-spacing: 0 12px
+    }
+
+    .project-list-table tr {
+        background-color: #fff
+    }
+
+    .table-nowrap td, .table-nowrap th {
+        white-space: nowrap;
+    }
+
+    .table-borderless > :not(caption) > * > * {
+        border-bottom-width: 0;
+    }
+
+    .table > :not(caption) > * > * {
+        padding: 0.75rem 0.75rem;
+        background-color: var(--bs-table-bg);
+        border-bottom-width: 1px;
+        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    }
+
+    .avatar-sm {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .rounded-circle {
+        border-radius: 50% !important;
+    }
+
+    .me-2 {
+        margin-right: 0.5rem !important;
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }
+
+    a {
+        color: #3b76e1;
+        text-decoration: none;
+    }
+
+    .badge-soft-danger {
+        color: #f56e6e !important;
+        background-color: rgba(245, 110, 110, .1);
+    }
+
+    .badge-soft-success {
+        color: #63ad6f !important;
+        background-color: rgba(99, 173, 111, .1);
+    }
+
+    .badge-soft-primary {
+        color: #3b76e1 !important;
+        background-color: rgba(59, 118, 225, .1);
+    }
+
+    .badge-soft-info {
+        color: #57c9eb !important;
+        background-color: rgba(87, 201, 235, .1);
+    }
+
+    .avatar-title {
+        align-items: center;
+        background-color: #3b76e1;
+        color: #fff;
+        display: flex;
+        font-weight: 500;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bg-soft-primary {
+        background-color: rgba(59, 118, 225, .25) !important;
+    }
+
+    /*]]>*/</style>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript"></script>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1RTS0P1CD"></script>
+<script>window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-F1RTS0P1CD');</script>
+</body>
+</html>

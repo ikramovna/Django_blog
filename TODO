@@ -5,9 +5,12 @@ confirm email ✅
 blog ✅
 pagination ✅
 override admin('jazzmin/settings.py') ✅
-email send with django-celery
-translation model(with django-parler)
-translation static(with django-rosetta)
+email send with django-celery, django-redis
+translation i18n model (with django-parler) ✅
+translation i18n static(with django-rosetta) ✅
+allow to change the language on the home page ✅
+django CRUD(with templates) ✅
+
 
 
 
