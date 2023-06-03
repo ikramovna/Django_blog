@@ -10,3 +10,5 @@ req:
 install-req:
 	pip3 install -r requirements.txt
 
+crontab:
+	python3 manage.py crontab add

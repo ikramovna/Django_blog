@@ -1,4 +1,7 @@
+from datetime import timedelta
+
 from django.shortcuts import render, get_object_or_404
+from django.utils import timezone
 from django.views import View
 from django.views.generic import ListView, DetailView, CreateView
 
@@ -59,3 +62,12 @@ class SendEmailView(CreateView):
         return super().form_invalid(form)
 
 
+def delete_canceled_posts():
+    # Calculate the date 5 days ago
+    five_days_ago = timezone.now() - timedelta(days=5)
+
+    # Query canceled posts older than 5 days
+    canceled_posts = Post.objects.filter(status='canceled', date_published__lt=five_days_ago)
+
+    # Delete the canceled posts
+    canceled_posts.delete()
