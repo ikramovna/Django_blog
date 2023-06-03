@@ -73,8 +73,6 @@ class LogoutView(View):
         return redirect('index')
 
 
-
-
 def profile(request):
     user_profile = request.user.userprofile
 
@@ -86,4 +84,4 @@ def profile(request):
     else:
         form = UserProfileForm(instance=user_profile)
 
-    return render(request, 'profile.html', {'form': form})
+    return render(request, 'apps/auth/profile.html', {'form': form})
