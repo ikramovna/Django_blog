@@ -3,14 +3,13 @@ from django.contrib.auth.models import User
 from django.shortcuts import redirect, render
 from django.views import View
 
-from .forms import (RegistrationForm, LoginForm)
+from .forms import (RegistrationForm, LoginForm, UserProfileForm)
 
 
 class RegisterView(View):
     form_class = RegistrationForm
     template_name = 'apps/auth/register.html'
     success_url = 'login'
-
 
     def get(self, request, *args, **kwargs):
         form = self.form_class()
@@ -72,3 +71,19 @@ class LogoutView(View):
     def get(self, request, *args, **kwargs):
         auth.logout(request)
         return redirect('index')
+
+
+
+
+def profile(request):
+    user_profile = request.user.userprofile
+
+    if request.method == 'POST':
+        form = UserProfileForm(request.POST, instance=user_profile)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
+    else:
+        form = UserProfileForm(instance=user_profile)
+
+    return render(request, 'profile.html', {'form': form})

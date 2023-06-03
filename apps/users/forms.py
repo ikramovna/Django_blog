@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
-from django.forms import (Form, CharField, EmailField, PasswordInput)
+from django.forms import (Form, CharField, EmailField, PasswordInput, ModelForm)
+
+from apps.users.models import UserProfile
 
 
 class RegistrationForm(Form):
@@ -47,3 +49,8 @@ class LoginForm(Form):
     username = CharField(max_length=30)
     password = CharField(widget=PasswordInput)
 
+
+class UserProfileForm(ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ('bio',)
