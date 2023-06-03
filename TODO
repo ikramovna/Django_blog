@@ -5,13 +5,13 @@ confirm email ✅
 blog ✅
 pagination ✅
 override admin('jazzmin/settings.py') ✅
-email send with django-celery, django-redis
+email send with django-celery, django-redis ✅
 translation i18n model (with django-parler) ✅
 translation i18n static(with django-rosetta) ✅
 allow to change the language on the home page ✅
 django CRUD(with templates) ✅
 Delete canceled posts after 5 days with cron ✅
-user profile page (with changes)
+user profile page (with changes) ✅
 
 
 
