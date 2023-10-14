@@ -4,8 +4,8 @@ change password (in change password page) ✅
 confirm email ✅
 blog ✅
 pagination ✅
-override admin('jazzmin/settings.py') ✅
-email send with django-celery, django-redis ✅
+override admin(with jazzmin) ✅
+email send with celery,redis ✅
 translation i18n model (with django-parler) ✅
 translation i18n static(with django-rosetta) ✅
 allow to change the language on the home page ✅
